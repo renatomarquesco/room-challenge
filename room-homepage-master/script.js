@@ -31,4 +31,3 @@ showNavbar.forEach((div)=>{
         document.body.classList.toggle("no-overflow")
     })
 })
-console.log(screen.width, screen.height)
