@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+    position: relative;
+}
+/* container para todos os devices */
+/* body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+/* .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } */
+/* começo estilo */
+.block{
+    /* max-width: 1440px; */
+    position: relative;
+    padding: 0;
+    overflow-x: hidden;
+}
+.nav{
+    position: absolute;
+    top: 9%;
+    min-width: 480px;
+    width: 34.7vw;
+}
+.chapter{
+    display: flex;
+    padding: 0;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 13px;
+    text-transform: lowercase;
+    
+}
+.nav ul li{
+    padding: 5px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s ease-in-out 0.2s;
+}
+.border-hover{
+    margin-top: 8px;
+    width: 0;
+    padding: 0;
+    transition: all ease 0.6s;
+}
+.nav ul li:hover .border-hover{
+    border: 1px solid white;
+    width: 100%;
+}
+
+/* .nav ul li:hover{
+    border-bottom: 3px solid white;
+} */
+.nav ul li:first-child{
+    margin-right: 20px;
+}
+@media (min-width:800px){
+    #wrapper{
+    display: flex;
+    width: max-content;
+    min-height: 450px;
+    max-height: 66vh;
+    padding: 0;
+    transition: 0.3s ease;
+    }
+    .box-arrows-small{
+    display: none;
+    }
+    .nav-small{
+        display: none;
+    }
+    .opaque{
+    display: none;
+    }
+}
+
+.div-main img{
+    width: 100%;
+    height: 100%;
+}
+.div-main{
+    width: 60vw;   
+    padding: 0;
+}
+.div-text-main{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10% 5.1%;
+    position: relative;
+}
+.div-text-main > h2,p,div{
+    width: 100%;
+    text-align: left;
+    padding: 10px;   
+}
+.div-text-main h2{
+    font-size: 33px;
+    color:black;
+}
+p{
+    font-size: 12px;
+    color: hsl(0, 0%, 63%);
+}
+.shop img{
+    width: 40px;
+    padding: 3px;
+    margin-left: 15px;
+}
+.shop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.shop:hover{
+    color: hsl(0, 0%, 63%);
+}
+.shop:hover >img {
+    fill: hsl(0, 0%, 63%)
+}
+.shop h5{
+    font-size: 12px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+} 
+.box-arrows{
+    position: absolute;
+    width: 10vw;
+    height: 13%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding: 0;
+}
+.box-arrows > div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box-arrows > div:hover{
+   background-color: hsl(0, 0%, 27%);
+}
+.box-arrows img{
+    width: 22%;
+    height: 30%;
+}
+.furniture{
+    display: flex;
+    min-height: 225px;
+    max-height: 34vh;
+    padding: 0;
+}
+.furn{
+    width: 30vw;
+    padding: 0;
+}
+.furniture img{
+    width: 100%;
+    height: 100%;
+}
+.mid-furn{
+    padding: 9% 2%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mid-furn h4{
+    text-transform: uppercase;
+    letter-spacing: 4.6px;
+    font-size: 13px;
+    padding:  0 10px;
+    font-weight: 800;
+}
+
+@media(max-width:799px){
+.block{
+    position: relative;
+}
+#wrapper{
+    display: flex;
+    width: max-content;
+    padding: 0;
+    transition: 0.3s ease;
+    }
+ .chapter{
+     display: block;
+     width: 100vw;
+     position: relative;
+ }
+ .chapter div{
+     width: 100vw;
+ }
+ .furniture{
+     display: block;
+ }
+ .furniture div{
+     width:100vw;
+ }
+ .nav{
+     display: none;
+ }
+ .box-arrows{
+     display: none;
+ }
+ .div-text-main {
+     padding:5% 1.7% ;
+ }
+ .div-text-main h2{
+    font-size: 30px;
+ }
+ .div-main{
+     position: relative;
+     padding: 0!important;
+     height: fit-content;
+ }
+ .div-main img{
+     margin-bottom: -5px;
+ }
+ .img-1{
+     content: url(./images/mobile-image-hero-1.jpg);
+ }
+ .img-2 {
+    content: url(./images/mobile-image-hero-2.jpg);
+}
+.img-3{
+    content: url(./images/mobile-image-hero-3.jpg);
+}
+
+ .box-arrows-small{
+     display: flex;
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     bottom: 0;
+     right: 0;
+     background-color: black;
+     width: 25%!important;
+     max-height: 60px;
+ }
+ .box-arrows-small div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .box-arrows-small img{
+     max-width: 10px;
+     width: 45%;
+     height: 30%;
+ }
+ .nav-small{
+     position: absolute;
+     width: 100vw;
+     background-image: url(./images/logo.svg);
+     background-repeat: no-repeat;
+     background-size:16%;
+     background-position: center;
+     z-index: 10;
+     padding: 15px 5px;
+     display: flex;
+     align-items: center;
+ }
+ .hamburger {
+     width: 100%;
+ }
+ .navbar-open{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: white;
+     height: 100%;
+     margin-left: -100vw;
+     transition: 0.5s ease-in;
+ }
+ .margin-zero {
+     margin-left: 0;
+ }
+ .navbar-open ul{
+     list-style: none;
+     display: flex;
+     height: 100%;
+     align-items: center;
+     font-size: 12px;
+     font-weight: 700;
+     text-transform: lowercase; 
+ }
+ .navbar-open ul li{
+     width: 18%;
+ }
+ 
+ .navbar-open ul li:first-child{
+     width: 28%;
+     display: flex;
+     justify-content: left;
+     padding: 0 5px;
+ }
+  .opaque{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     transition: 0.3s ease 0.2s;
+ }
+ .to-the-front{
+     background-color: rgb(0, 0, 0, 0.7);
+     z-index: 1;
+ }
+ .no-overflow{
+    overflow-y: hidden;
+ }
+ 
+}
